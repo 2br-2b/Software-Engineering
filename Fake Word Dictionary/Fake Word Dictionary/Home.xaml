@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Fictionary.Home">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="1" Grid.ColumnSpan="3" Text="Oxword Fictionary" FontSize="40" HorizontalTextAlignment="Center" Margin="0,10,0,0"/>
+
+            <Button Grid.Row="4" Grid.ColumnSpan="3" Text="Add a word" BackgroundColor="DarkOrange" Clicked="Button_Clicked" HorizontalOptions="Center"
+                    WidthRequest="150" HeightRequest="50"/>
+
+            <BoxView BackgroundColor="Orangered" Grid.Row="0" Grid.ColumnSpan="3"/>
+            <Button Text="Sign in" Grid.ColumnSpan="3" HorizontalOptions="End" BackgroundColor="Orangered" Margin="0,0,15,0"/>
+            <Button Text="Settings" HorizontalOptions="Start" BackgroundColor="OrangeRed" Margin="15,0,0,0"/>
+
+            <Entry Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Search" Margin="10,0,0,0"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="search" BackgroundColor="DarkOrange" Margin="0,0,10,0" Clicked="Search_Clicked"/>
+
+            <BoxView Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Beige" Margin="10,0,10,80"/>
+            <BoxView Grid.Row="6" Grid.ColumnSpan="3" BackgroundColor="OrangeRed" Margin="10,0,10,0"/>
+            <Label Grid.Row="6" Grid.ColumnSpan="3" Text="Word of the day" FontSize="30" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+         </Grid>
+    </ContentPage.Content>
+</ContentPage>

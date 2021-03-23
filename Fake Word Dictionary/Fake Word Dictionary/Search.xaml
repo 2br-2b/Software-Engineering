@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Fictionary.Search">
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,60">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>           
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="1" Text="Back" Clicked="Button_Clicked" BackgroundColor="DarkOrange" Margin="15,0,15,0"/>
+            <Entry Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Search"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="search" BackgroundColor="DarkOrange"/>
+            <CollectionView Grid.Row="3" Grid.ColumnSpan="3"/>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

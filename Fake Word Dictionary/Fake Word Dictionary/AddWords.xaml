@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Fictionary.AddWords">
+    <ContentPage.Content>
+        <Grid Margin="10,80,10,40">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="1" FontSize="Large" Text="Add Word" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Word:" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+            <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Placeholder="word"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Definition:" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" Margin="0,15,0,0"/>
+            <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Placeholder="definition"/>
+
+            <Button Grid.Row="4" Grid.Column="1" Text="Add Word" Clicked="AddWord_Clicked" BackgroundColor="DarkOrange" Margin="10,0,10,0"/>
+            <Button Grid.Row="5" Grid.Column="1" Text="Cancel" Clicked="Cancel_Clicked" BackgroundColor="DarkOrange" Margin="10,0,10,0"/>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
